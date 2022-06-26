@@ -1,0 +1,17 @@
+{
+	"name": "material-design-icons",
+	"version": "1.0.0",
+	"description": "Material Design Icons",
+	"main": "index.js",
+	"repository": "https://github.com/vineelsai26/material-design-icons",
+	"author": "Vineel Sai",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"build": "rimraf dist && mkdirp dist && node build.js"
+	},
+	"devDependencies": {
+		"mkdirp": "^1.0.4",
+		"rimraf": "^3.0.2"
+	}
+}
