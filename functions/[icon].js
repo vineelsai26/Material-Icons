@@ -18,7 +18,7 @@ export async function onRequest(context) {
     const icon = `ic_${iconType}${iconUrl.pathname.split('/').pop()}`
 
     // Create the corresponding icon url
-    const newIcon = `${iconUrl.protocol}//${iconUrl.hostname}:${iconUrl.port}/icons/${icon}.html`
+    const newIcon = `${iconUrl.protocol}//${iconUrl.hostname}:${iconUrl.port}/icons/${icon}.svg`
 
     // fetch the icon
     const res = await fetch(newIcon)
@@ -29,7 +29,7 @@ export async function onRequest(context) {
     // Return the icon as html
     return new Response(html, {
         headers: {
-            "Content-Type": "text/html"
+            "Content-Type": "image/svg+xml"
         }
     })
 }
