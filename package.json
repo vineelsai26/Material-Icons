@@ -8,10 +8,13 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"build": "rimraf dist && mkdirp dist && mkdirp dist/icons && node build.js"
+		"build": "rimraf dist && mkdirp dist && mkdirp dist/icons && node build.js",
+		"watch": "wrangler pages dev dist --compatibility-date=2022-12-03",
+		"dev": "yarn build && yarn watch"
 	},
 	"devDependencies": {
 		"mkdirp": "^1.0.4",
-		"rimraf": "^3.0.2"
+		"rimraf": "^3.0.2",
+		"wrangler": "^2.5.0"
 	}
 }
