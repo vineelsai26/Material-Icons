@@ -12,7 +12,7 @@ export async function onRequest(context) {
         iconType = ''
     }
     const icon = `ic_${iconType}${iconUrl.pathname.split('/').pop()}`
-    const newIcon = `${iconUrl.protocol}//${iconUrl.hostname}:${iconUrl.port}/${icon}.html`
+    const newIcon = `${iconUrl.protocol}//${iconUrl.hostname}:${iconUrl.port}/icons/${icon}.html`
     console.log(newIcon)
     const res = await fetch(newIcon)
     const html = await res.text()
