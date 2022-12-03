@@ -12,6 +12,6 @@ for (let folder of folders) {
         } else {
             folderName = `_${folderName.toLowerCase()}_`
         }
-        fs.writeFileSync(`./dist/ic${folderName}${name}`, svg)
+        fs.writeFileSync(`./dist/icons/ic${folderName}${name}`, svg)
     }
 }

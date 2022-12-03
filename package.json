@@ -8,7 +8,7 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"build": "rimraf dist && mkdirp dist && node build.js"
+		"build": "rimraf dist && mkdirp dist && mkdirp dist/icons && node build.js"
 	},
 	"devDependencies": {
 		"mkdirp": "^1.0.4",
