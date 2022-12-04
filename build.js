@@ -13,5 +13,8 @@ for (let folder of folders) {
             folderName = `_${folderName.toLowerCase()}_`
         }
         fs.writeFileSync(`./dist/icons/ic${folderName}${name}`, svg)
+        // if (folderName === '_') {
+        //     console.log(`| ${name.replace(".svg", "")}    | ![${name.replace(".svg", "")} filled icon](https://material.vineelsai.com/${name.replace(".svg", "")}?type=filled) | ![${name.replace(".svg", "")} outlined icon](https://material.vineelsai.com/${name.replace(".svg", "")}?type=outlined) | ![${name.replace(".svg", "")} round icon](https://material.vineelsai.com/${name.replace(".svg", "")}?type=round) | ![${name.replace(".svg", "")} sharp icon](https://material.vineelsai.com/${name.replace(".svg", "")}?type=sharp) | ![${name.replace(".svg", "")} two tone icon](https://material.vineelsai.com/${name.replace(".svg", "")}?type=two_tone) |`)
+        // }
     }
 }
