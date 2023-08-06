@@ -9,12 +9,13 @@
 	"type": "module",
 	"scripts": {
 		"build": "rimraf dist && mkdirp dist && mkdirp dist/icons && node build.js",
-		"watch": "wrangler pages dev dist --compatibility-date=2022-12-03",
-		"dev": "yarn build && yarn watch"
+		"watch": "wrangler pages dev dist --compatibility-date=2023-07-24",
+		"dev": "npm run build && npm run watch"
 	},
 	"devDependencies": {
-		"mkdirp": "^1.0.4",
-		"rimraf": "^3.0.2",
-		"wrangler": "^2.5.0"
+		"@cloudflare/workers-types": "^4.20230801.0",
+		"mkdirp": "^3.0.1",
+		"rimraf": "^5.0.1",
+		"wrangler": "^3.4.0"
 	}
 }
