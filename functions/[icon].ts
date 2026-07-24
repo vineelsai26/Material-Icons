@@ -1,4 +1,4 @@
-export async function onRequestGet(context) {
+export const onRequestGet: PagesFunction = async (context) => {
     const {
         request
     } = context

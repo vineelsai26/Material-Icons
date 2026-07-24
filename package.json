@@ -10,12 +10,13 @@
 	"scripts": {
 		"build": "rimraf dist && mkdirp dist && mkdirp dist/icons && node build.js",
 		"watch": "wrangler pages dev dist --compatibility-date=2023-07-24",
-		"dev": "npm run build && npm run watch"
+		"dev": "pnpm build && pnpm watch",
+		"typecheck": "tsc --noEmit -p functions/tsconfig.json"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20230801.0",
 		"mkdirp": "^3.0.1",
 		"rimraf": "^5.0.1",
-		"wrangler": "^3.4.0"
+		"wrangler": "^4.40.0"
 	}
 }
